@@ -122,3 +122,10 @@ html, body {
 	font-size: 18px;
 	color: var(--bio-font-color)
 }
+
+/* Link Block */
+
+#linkBlock {
+	width: 800px;
+	margin: auto;
+}
