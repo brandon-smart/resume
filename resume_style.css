@@ -69,9 +69,13 @@ img {
 	margin: 0px var(--header-link-margin) 0px var(--header-link-margin);
 }
 
+.headerLink:hover {
+	opacity: 0.8;
+}
+
 /* Bio Block */
 
-#bioBackground {
+#bio {
 
 	display: flex;
 	justify-content: center;
