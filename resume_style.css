@@ -1,0 +1,202 @@
+:root {
+
+	/*Header*/
+	--header-height: 60px;
+	--header-link-margin: 15px;
+	--header-font-size: 20px;
+	--header-font-color: #bfffff;
+	--header-background-color: #24292e;
+
+	/*Bio Block*/
+	--bio-height: 600px;
+	--bio-background-color: #222222;
+	--bio-font-color: #bfffff;
+	--bio-section-margin: 20px; /*Note that the actual margin is twice this*/
+	--bio-info-block-width: 950px;
+	--bio-info-block-height: 500px;
+
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: "Open Sans";
+	src:url("Fonts/OpenSans/OpenSans-Regular.ttf");
+}
+@font-face {
+	font-family: "InterUI";
+	src:url("Fonts/InterUI/Inter (TTF)/Inter-Regular.ttf");
+}
+
+/* Basic HTML */
+
+html, body {
+	width: 100%;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+}
+
+img {
+	outline: 0;
+	border: 0;
+}
+
+/* Header */
+
+#header {
+	background-color: var(--header-background-color);
+	display: block;
+	height: var(--header-height);
+	width: 100%;
+}
+
+#headerLinkContainer {
+	display: flex;
+	justify-content: center;
+	height: var(--header-height);
+	margin: auto;
+}
+
+.headerLink {
+	font-size: var(--header-font-size);
+	line-height: var(--header-height);
+	display: inline;
+	color: var(--header-font-color);
+	margin: 0px var(--header-link-margin) 0px var(--header-link-margin);
+}
+
+/* Bio Block */
+
+#bioBackground {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: var(--bio-height);
+	background-color: var(--bio-background-color);
+
+}
+
+#bioInfoBlock {
+
+	display: flex;
+
+	width: var(--bio-info-block-width);
+	height: var(--bio-info-block-height);
+	/*background-color: #cccccc;*/
+
+}
+
+#bioProfile {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*justify-content: center;*/
+
+	height: 100%;
+	flex-grow: 1;
+	margin: 0px var(--bio-section-margin) 0px 0px;
+	/*background-color: #cccccc;*/
+	flex-basis: 0;
+
+}
+
+#bioProfileImage {
+	width: 100%;
+}
+
+#bioProfileText {
+	margin: 0px;
+	padding: 5px 0px 5px 0px;
+	font-size: 18px;
+	color: var(--bio-font-color)
+}
+
+#bioDescription {
+
+	height: 100%;
+	flex-grow: 2;
+	margin: 0px 0px 0px var(--bio-section-margin);
+	/*background-color: #cccccc;*/
+	flex-basis: 0;
+
+}
+
+#bioDescriptionHeading {
+	margin: 0px;
+	padding: 10px;
+	color: var(--bio-font-color)
+}
+
+#bioDescriptionRule {
+	/*padding: 10px;*/
+	color: var(--bio-font-color)
+}
+
+#bioDescriptionParagraph {
+	margin: 0px;
+	padding: 10px;
+	font-size: 18px;
+	color: var(--bio-font-color);
+	line-height: 22px;
+}
+
+/* Link Block */
+
+#linkBlock {
+	width: 950px;
+	margin: auto;
+}
+
+.linkListHeading {
+	font-family: "InterUI", sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+}
+
+.linkItem {
+	display: flex;
+	width: 100%;
+	height: 170px;
+	box-shadow: 0 3px 10px 0 rgba(115,143,147,.9);
+	margin: 25px 0px 25px 0px;
+}
+
+.linkItem:hover .linkInfo .linkItemHeading {
+	color: #1ba94c;
+}
+
+.linkInfo {
+	flex-grow: 5;
+	flex-basis: 0;
+}
+
+.linkImage {
+	flex-grow: 2;
+	background-color: #dddddd;
+	flex-basis: 0;
+	/*border-left: 2px solid black;*/
+}
+
+.linkItemHeading {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	color: #0e141e;
+	margin: 17px 17px 17px 17px;
+}
+
+.linkItemParagraph {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #425356;
+	margin: 17px 17px 17px 17px;
+}
