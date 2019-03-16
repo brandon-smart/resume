@@ -69,9 +69,13 @@ img {
 	margin: 0px var(--header-link-margin) 0px var(--header-link-margin);
 }
 
+.headerLink:hover {
+	opacity: 0.8;
+}
+
 /* Bio Block */
 
-#bioBackground {
+#bio {
 
 	display: flex;
 	justify-content: center;
@@ -112,11 +116,11 @@ img {
 	width: 100%;
 }
 
-#bioProfileText {
+.bioProfileText {
 	margin: 0px;
 	padding: 5px 0px 5px 0px;
 	font-size: 18px;
-	color: var(--bio-font-color)
+	color: var(--bio-font-color);
 }
 
 #bioDescription {
@@ -169,7 +173,7 @@ img {
 	margin: 25px 0px 25px 0px;
 }
 
-.linkItem:hover .linkInfo .linkItemHeading {
+a:hover .linkItem .linkInfo .linkItemHeading {
 	color: #1ba94c;
 }
 
