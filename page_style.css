@@ -1,19 +1,7 @@
 :root {
 
-	/*Header*/
-	--header-height: 60px;
-	--header-link-margin: 15px;
-	--header-font-size: 20px;
-	--header-font-color: #bfffff;
-	--header-background-color: #24292e;
-
 	/*Bio Block*/
-	--bio-height: 150px;
-	--bio-background-color: #222222;
-	--bio-font-color: #bfffff;
-	--bio-section-margin: 20px; /*Note that the actual margin is twice this*/
-	--bio-info-block-width: 950px;
-	--bio-info-block-height: 500px;
+	--bio-height: 170px;
 
 }
 
@@ -72,7 +60,7 @@ img {
 #bioName {
 
 	font-family: "InterUI", sans-serif;
-	font-size: 3em;
+	font-size: 2.7em;
 	font-weight: 400;
 
 	margin: 0px 0px 10px 0px;
@@ -84,6 +72,7 @@ img {
 
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.0em;
+	line-height: 1.5em;
 
 	margin: 0px 0px 0px 0px;
 	color: antiquewhite;
