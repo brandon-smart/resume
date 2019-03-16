@@ -1,0 +1,138 @@
+:root {
+
+	/*Header*/
+	--header-height: 60px;
+	--header-link-margin: 15px;
+	--header-font-size: 20px;
+	--header-font-color: #bfffff;
+	--header-background-color: #24292e;
+
+	/*Bio Block*/
+	--bio-height: 150px;
+	--bio-background-color: #222222;
+	--bio-font-color: #bfffff;
+	--bio-section-margin: 20px; /*Note that the actual margin is twice this*/
+	--bio-info-block-width: 950px;
+	--bio-info-block-height: 500px;
+
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: "Open Sans";
+	src:url("Fonts/OpenSans/OpenSans-Regular.ttf");
+}
+@font-face {
+	font-family: "InterUI";
+	src:url("Fonts/InterUI/Inter (TTF)/Inter-Regular.ttf");
+}
+
+/* Basic HTML */
+
+html, body {
+	width: 100%;
+	margin: 0px;
+	background-color: bisque;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+}
+
+img {
+	outline: 0;
+	border: 0;
+}
+
+#page {
+	width: 1000px;
+	height: 1414px;
+	background-color: white;
+	overflow: none;
+	margin: 50px auto 50px auto;
+}
+
+/* Bio Block */
+
+#bio {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: var(--bio-height);
+	background-color: #414141;
+
+}
+
+#bioName {
+
+	font-family: "InterUI", sans-serif;
+	font-size: 3em;
+	font-weight: 400;
+
+	margin: 0px 0px 10px 0px;
+	color: antiquewhite;
+
+}
+
+#bioInfo {
+
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.0em;
+
+	margin: 0px 0px 0px 0px;
+	color: antiquewhite;
+
+}
+
+/* Main Block */
+
+#mainBlock {
+	width: 90%;
+	margin: 35px auto 0px auto;
+}
+
+.sectionHeading {
+	font-family: "InterUI", sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 5px 0px;
+}
+
+.sectionRule {
+	margin: 5px 0px 0px 0px;
+}
+
+.infoSection {
+	display: flex;
+	flex-direction: row;
+	margin: 18px 0px 0px 0px;
+
+	font-family: "InterUI", sans-serif;
+	font-size: 0.95em;
+	line-height: 1.5em;
+}
+
+.leftText {
+	flex-grow: 2;
+	flex-basis: 0;
+	margin-right: 20px;
+}
+
+.rightText {
+	flex-grow: 9;
+	flex-basis: 0;
+}
+
+.indentedRightText {
+	margin: 0px 0px 0px 0px;
+	padding-left: 3em;
+}
+
+.indentedMargin {
+	height: 4px;
+}
