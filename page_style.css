@@ -1,19 +1,7 @@
 :root {
 
-	/*Header*/
-	--header-height: 60px;
-	--header-link-margin: 15px;
-	--header-font-size: 20px;
-	--header-font-color: #bfffff;
-	--header-background-color: #24292e;
-
 	/*Bio Block*/
-	--bio-height: 150px;
-	--bio-background-color: #222222;
-	--bio-font-color: #bfffff;
-	--bio-section-margin: 20px; /*Note that the actual margin is twice this*/
-	--bio-info-block-width: 950px;
-	--bio-info-block-height: 500px;
+	--bio-height: 155px;
 
 }
 
@@ -72,7 +60,7 @@ img {
 #bioName {
 
 	font-family: "InterUI", sans-serif;
-	font-size: 3em;
+	font-size: 2.4em;
 	font-weight: 400;
 
 	margin: 0px 0px 10px 0px;
@@ -80,10 +68,11 @@ img {
 
 }
 
-#bioInfo {
+.bioInfo {
 
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.0em;
+	line-height: 1.5em;
 
 	margin: 0px 0px 0px 0px;
 	color: antiquewhite;
@@ -94,7 +83,16 @@ img {
 
 #mainBlock {
 	width: 90%;
-	margin: 35px auto 0px auto;
+	margin: 25px auto 0px auto;
+}
+
+#introText {
+	display: block;
+	margin: 0px 0px 0px 0px;
+	font-family: "InterUI", sans-serif;
+	font-size: 0.95em;
+	line-height: 1.5em;
+	text-align: center;
 }
 
 .sectionHeading {
@@ -135,4 +133,59 @@ img {
 
 .indentedMargin {
 	height: 4px;
+}
+
+#bottomBlock {
+	display: flex;
+	flex-direction: row;
+}
+
+#references {
+	flex-basis: 0;
+	flex-grow: 7;
+
+	margin: 0px 10px 0px 0px;
+}
+
+#referencesBlock {
+	display: flex;
+	flex-direction: row;
+}
+
+.reference {
+	flex-basis: 0;
+	flex-grow: 1;
+	margin: 5px 5px 5px 5px;
+
+	font-family: "InterUI", sans-serif;
+	font-size: 0.95em;
+	line-height: 1.5em;
+}
+
+.reference h1 {
+	font-size: 1.2em;
+	margin: 15px 0px 5px 0px;
+}
+
+#keySkills {
+	flex-basis: 0;
+	flex-grow: 6;
+
+	margin: 0px 0px 0px 10px;
+}
+
+#skills {
+	font-family: "InterUI", sans-serif;
+	font-size: 0.95em;
+	line-height: 1.5em;
+}
+
+.skillsSection {
+	/*display: flex;*/
+	/*flex-direction: row;*/
+	margin: 10px 0px 0px 0px;
+
+	font-family: "InterUI", sans-serif;
+	font-size: 0.95em;
+	line-height: 1.5em;
 }
