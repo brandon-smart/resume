@@ -39,7 +39,8 @@ img {
 	height: 1414px;
 	background-color: white;
 	overflow: none;
-	margin: 50px auto 50px auto;
+	/*margin: 50px auto 50px auto;*/
+	margin: 0px auto 0px auto;
 }
 
 /* Bio Block */
@@ -83,14 +84,15 @@ img {
 
 #mainBlock {
 	width: 90%;
-	margin: 25px auto 0px auto;
+	margin: 22px auto 0px auto;
 }
 
 #introText {
 	display: block;
 	margin: 0px 0px 0px 0px;
 	font-family: "InterUI", sans-serif;
-	font-size: 0.95em;
+	/*font-size: 0.95em;*/
+	font-size: 0.87em;
 	line-height: 1.5em;
 	text-align: center;
 }
@@ -188,4 +190,8 @@ img {
 	font-family: "InterUI", sans-serif;
 	font-size: 0.95em;
 	line-height: 1.5em;
+}
+
+.email {
+	font-size: 0.8em;
 }
